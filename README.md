@@ -62,6 +62,35 @@ Test Plan 3 (/highest-gpa)
 
 </details>
 
+<details>
+<Summary><b>Conclusion</b></Summary>
+
+Setelah melakukan optimasi pada ketiga endpoint, berikut adalah perbandingan hasil pengujian performa menggunakan JMeter sebelum dan sesudah optimasi:
+
+getAllStudentsWithCourses: 
+- sebelum = 1526 ms
+- sesudah = 322 ms
+- peningkatan = 78.9%
+
+joinStudentNames: 
+- sebelum = 154 ms
+- sesudah = 104 ms
+- peningkatan32.5%
+
+findStudentWithHighestGpa:
+- sebelum = 169 ms
+- sesudah = 126 ms
+- peningkatan = 25.4%
+
+Perhatikan bawha terdapat peningkatan yg signifikan dari hasil pengukuran JMeter setelah dilakukan optimasi. Peningkatan terbesar terjadi pada endpoint `/all-student` dengan peningkatan sebesar 78.9%, hal ini disebabkan karena sebelumnya terdapat N+1 query problem di mana setiap student melakukan query tambahan ke database. Setelah dioptimasi dengan mengganti menjadi single query `findAll()`, waktu eksekusi turun drastis dari 1526 ms menjadi 322 ms.
+
+Endpoint `/all-student-name` mengalami peningkatan sebesar 32.5%, dari 154 ms menjadi 104 ms, setelah mengganti string concatenation dengan `+=` menjadi `StringBuilder` yg lebih efisien dalam penggunaan memory.
+
+Endpoint `/highest-gpa` mengalami peningkatan sebesar 25.4%, dari 169 ms menjadi 126 ms, setelah mengganti iterasi manual mencari GPA tertinggi dengan database query langsung menggunakan `findTopByOrderByGpaDesc()`.
+
+Kesimpulannya, optimasi yg dilakukan pada level memberikan dampak positif pada aplikasi, ketiga endpoint berhasil mencapai peningkatan performa lebih dari 20% yg menjadi target minimum pada modul ini.
+
+</details>
 
 <details>
 <Summary><b>1. What is the difference between the approach of performance testing with JMeter and profiling with IntelliJ Profiler in the context of optimizing application performance?</b></Summary>
