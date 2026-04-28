@@ -6,58 +6,103 @@ Muhammad Rafi Sugianto / 2406357135
 Test Plan 1
 
 - Graph Results
+
 ![Graph Results](screenshot/test_plan_1/graph results.jpeg)
+
 - Results in Table
+
 ![Results in Table](screenshot/test_plan_1/results in table.jpeg)
+
 - Results Tree
+
 ![Results Tree](screenshot/test_plan_1/results tree.jpeg)
+
 - Summary Report
+
 ![Summary Report](screenshot/test_plan_1/summary report.jpeg)
+
 - Running Test Plan Via Command Line
+
 ![Via Command Line](screenshot/test_plan_1/via command line.jpeg)
+
 - CPU Time of getAllStudentsWithCourses() Before Optimization
+
 ![CPU Time Before Optimize](screenshot/test_plan_1/cpu time before optimize.jpeg)
+
 - CPU Time of getAllStudentsWithCourses() After Optimization
+
 ![CPU Time After Optimize](screenshot/test_plan_1/cpu time after optimize.jpeg)
+
 - Test Plan After Optimization
+
 ![After Optimize](screenshot/test_plan_1/after optimize.jpeg)
 
 Test Plan 2 (/all-student-name)
 
 - Graph Results
+
 ![Graph Result](screenshot/test_plan_2/graph result.jpeg)
+
 - Results in Table
+
 ![Results in Table](screenshot/test_plan_2/results in table.jpeg)
+
 - Results Tree
+
 ![Results Tree](screenshot/test_plan_2/results tree.jpeg)
+
 - Summary Report
+
 ![Summary Report](screenshot/test_plan_2/summary report.jpeg)
+
 - Running Test Plan Via Command Line
+
 ![Via Command Line](screenshot/test_plan_2/via command line.jpeg)
+
 - CPU Time of joinStudentNames() Before Optimization
+
 ![CPU Time Before Optimize](screenshot/test_plan_2/cpu time before optimize.jpeg)
+
 - CPU Time of joinStudentNames() After Optimization
+
 ![CPU Time After Optimize](screenshot/test_plan_2/cpu time after optimize.jpeg)
+
 - Test Plan After Optimization
+
 ![After Optimize](screenshot/test_plan_2/after optimize.jpeg)
 
 Test Plan 3 (/highest-gpa)
 
 - Graph Results
+
 ![Graph Results](screenshot/test_plan_3/graph results.jpeg)
+
 - Results in Table
+
 ![Results in Table](screenshot/test_plan_3/results in table.jpeg)
+
 - Results Tree
+
 ![Results Tree](screenshot/test_plan_3/results tree.jpeg)
+
 - Summary Report
+
 ![Summary Report](screenshot/test_plan_3/summary report.jpeg)
+
 - Running Test Plan Via Command Line
+
 ![Via Command Line](screenshot/test_plan_3/via command line.jpeg)
+
 - CPU Time of findStudentWithHighestGpa() Before Optimization
+
 ![CPU Time Before Optimize](screenshot/test_plan_3/cpu time before optimize.jpeg)
+
 - CPU Time of findStudentWithHighestGpa() After Optimization
+
 ![CPU Time After Optimize](screenshot/test_plan_3/cpu time after optimize.jpeg)
+
 - Test Plan After Optimization
+
 ![After Optimize](screenshot/test_plan_3/after optimize.jpeg)
 
 </details>
